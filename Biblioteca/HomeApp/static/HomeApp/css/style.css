@@ -1,0 +1,62 @@
+.book-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top:70px;
+}
+.book-card img {
+    object-fit: cover;
+    height: 200px;
+}
+img > .libro-imagen{
+    width:500px;
+    height:700px;
+    object-fit:cover;
+    padding:20px;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Esto asegura que la imagen de fondo cubra todo el contenedor */
+.libro-background {
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    width: 100%; /* Ancho del contenedor limitado al 80% de la ventana */
+    margin: 0 auto; /* Centra el contenedor */
+    background-size: contain; /* Asegura que la imagen cubra el contenedor */
+    background-position: center center; /* Centra la imagen dentro del contenedor */
+
+}
+/* Contenedor opaco sobre la imagen de fondo */
+.overlay {
+    position: absolute;
+    top: 50%; /* Empieza en la mitad de la pantalla */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* Ajusta el contenido para que esté centrado */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor para el texto (título y resumen) */
+.text-container {
+    width: 50%; /* Ajusta el ancho al 50% */
+    padding: 20px;
+}
+
+/* Opcional: para darle una sombra sutil al texto y hacerlo más legible */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Para asegurar que el texto esté centrado en el contenedor */
+.text-center {
+    text-align: center;
+}

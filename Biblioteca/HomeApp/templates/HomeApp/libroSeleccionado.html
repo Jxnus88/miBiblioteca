@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ libro.titulo }}
+{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<!-- Contenedor principal con fondo de imagen -->
+<div class="libro-background" style="background-image: url('{{ libro.imagen_background.url }}');">
+    <!-- Contenedor opaco para el título y la descripción -->
+    <div class="overlay d-flex justify-content-center align-items-center">
+        <div class="text-container text-center">
+            <h1 class="text-white text-shadow">{{ libro.titulo }}</h1>
+            <p class="text-white">{{ libro.resumen }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
