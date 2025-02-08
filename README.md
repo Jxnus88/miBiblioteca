@@ -38,38 +38,38 @@ El proyecto también utiliza la librería **Pillow** para el control y manejo de
 1. Clona el repositorio:
   
     bash
-    git clone https://github.com/Jxnus88/miBiblioteca.git
-    cd miBiblioteca
+    - git clone https://github.com/Jxnus88/miBiblioteca.git
+    - cd miBiblioteca
 
 3. Crea un entorno virtual (opcional, pero recomendado):
    
     bash
-    python3 -m venv venv
-    source venv/bin/activate 
-    En Windows usa 'venv\Scripts\activate'
+    - python3 -m venv venv
+    - source venv/bin/activate 
+    - En Windows usa 'venv\Scripts\activate'
 
 4. Instala las dependencias, incluida Pillow para el control de imágenes:
     
     bash
-    pip install Pillow
+    - pip install Pillow
 
 5. Realiza las migraciones de la base de datos:
   
     bash
-    python manage.py makemigrations
-    python manage.py migrate
+    - python manage.py makemigrations
+    - python manage.py migrate
 
 6. Crea un superusuario para acceder al panel de administración:
 
     bash
-    python manage.py createsuperuser
-    Introduce un nombre
-    Introduce un email(opcional)
-    Introduce contraseña
-    Confirma contraseña
+    - python manage.py createsuperuser
+    - Introduce un nombre
+    - Introduce un email(opcional)
+    - Introduce contraseña
+    - Confirma contraseña
 
 7. Ejecuta el servidor de desarrollo:
 
     bash
-    python manage.py runserver
+    - python manage.py runserver
   
